@@ -21,15 +21,18 @@ class product(models.Model):
     Mahsulot_nomi = models.CharField(max_length=256)
     Shifr = models.CharField(max_length=128)
     Sinf = models.CharField(max_length=30, choices=ROLES)
-    Texnik_shart_seriyasi = models.CharField(max_length=16)
+
+    Texnik_shart = models.CharField(max_length=32, default='TS-28078417')
     Texnik_shart_raqami = models.CharField(max_length=32)
+
     Sana = models.DateTimeField(default=datetime.datetime.now())
     Sinov_namunasi = models.BooleanField(default=False)
-    Partiya_soni_belgilash = models.IntegerField()
-    Partiya_raqami = models.IntegerField()
+    Partiya_soni_belgilash = models.IntegerField(default=1)
+
     Buyurtmachi_nomi = models.CharField(max_length=128)
     Buyurtmachi_raqami = models.IntegerField()
     Buyurtma_soni = models.IntegerField()
+    Partiya_raqami = models.IntegerField()
     Buyurtma_muddati = models.DateTimeField()
     Sinov_bayonnomasi_raqami = models.CharField(max_length=8)
     Sinov_bayonnomasi_sanasi = models.DateTimeField()
@@ -38,6 +41,3 @@ class product(models.Model):
 
     class Meta:
         db_table = "product"
-
-    def __str__(self):
-        return f"{self.Mahsulot_nomi}"

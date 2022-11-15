@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap.css">
+    <link rel="stylesheet" href="static/css/bootstrap-grid.css">
+    <link rel="stylesheet" href="static/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="static/css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="static/css/bootstrap-reboot.min.css">
+
+    <title>Mahsulot qo'shish</title>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+
+       <span class="navbar-brand mb-0 h1">
+           <img src="static/itmlogo.png" width="30" height="30"
+                class="d-inline-block align-top">
+           Mahsulot haqida ma'lumot qo'shish
+       </span>
+
+</nav>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-sm">
+            <form class="needs-validation" novalidate>
+
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="validationTooltip01">Mahsulot nomi</label>
+                        <input type="text" placeholder="Mahsulot nomi" class="form-control" id="validationTooltip01">
+                        <div class="valid-tooltip">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Shifr</label>
+                        <input type="text" class="form-control" placeholder="Shifr">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Sinf</label>
+                        <input type="text" class="form-control" placeholder="Mahsulot sinfi">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-2 mb-3">
+                        <label>Texnik shart seriyasi</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-10 mb-3">
+                        <label>Texnik shart raqami</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Sana</label>
+                        <input class="form-control" type="date">
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Sinov namunasi</label>
+                </div>
+
+                <br>
+                <div class="form-row">
+                    <div class="col-md-12 mb-3">
+                        <label for="validationTooltip03">Buyurtmachi nomi</label>
+                        <input type="text" class="form-control" id="validationTooltip03" placeholder="Buyurtmachi nomi"
+                               required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                        <label>Buyurtmachi raqami</label>
+                        <input type="text" class="form-control" placeholder="Buyurtmachi raqami">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Buyurtmani soni</label>
+                        <input type="text" class="form-control" placeholder="Buyurtmachi soni">
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <label>Buyurtma muddati</label>
+                        <input type="date" class="form-control" placeholder="Buyurtma muddati">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-3 mb-3">
+                        <label>Texnik shart</label>
+                        <input type="file" class="form-control" placeholder="Texnik shart">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Texnik pasport</label>
+                        <input type="file" class="form-control" placeholder="Texnik pasport">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Texnik jarayon</label>
+                        <input type="file" class="form-control" placeholder="Texnik jarayon">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>Sarf me'yori</label>
+                        <input type="file" class="form-control" placeholder="Sarf me'yori">
+                    </div>
+                </div>
+                <nav class="navbar navbar-light bg-light">
+                    <span class="navbar-brand mb-0 h1">
+                        Texnik nazorat bo'limi
+                    </span>
+                </nav>
+                <br>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Sinov o'tkazilgan bayonnoma raqami</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Sinov o'tkazilgan bayonnoma sanasi</label>
+                        <input type="date" class="form-control">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 mb-3">
+                        <label>Sinov o'tkazilgan mahsulot</label>
+                        <input type="text" class="form-control">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label>Sinov bayonnomasi ro'yhatdan o'tgan raqami</label>
+                        <input type="text" class="form-control">
+                    </div>
+                </div>
+                <button class="btn btn-primary col-md-12 mb-3" type="submit">Mahsulot qo'shish</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
